@@ -160,7 +160,7 @@ XMLTEMPLATE_FastqToTagCounts ='\
 	# sanitise the XML
 	cat $@/FastqToTagCounts.xml.source | sed 's/^ //g' > $@/FastqToTagCounts.xml
 	# run Tassel
-	run_pipeline.pl $(MINRRAM) $(MAXRRAM) -configFile $@/FastqToTagCounts.xml  2>&1 $@/FastqToTagCounts.log
+	$(RUN_TASSEL_PIPELINE) $(MINRRAM) $(MAXRRAM) -configFile $@/FastqToTagCounts.xml > $@/FastqToTagCounts.log  2>&1 
 
 
 ##########################################################################################
