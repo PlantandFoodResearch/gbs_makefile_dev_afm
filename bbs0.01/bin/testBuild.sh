@@ -27,5 +27,5 @@ make -f ${MAKEFILE} -d --no-builtin-rules KEYFILE=${TESTDATA}/Pipeline_Testing_k
 
 echo "finished run, generating tool versions listing (${BUILDNAME}.versions) and a precis of the verbose log (${BUILDNAME}.logprecis)"
 
-make -f ${MAKEFILE} ${BUILDNAME}.versions
-make -f ${MAKEFILE} ${BUILDNAME}.logprecis
+make -f ${MAKEFILE} -s ${BUILDNAME}.versions
+make -f ${MAKEFILE} -s ${BUILDNAME}.logprecis

@@ -111,7 +111,7 @@ files_to_process :=  $(foreach name, $(INPUTFOLDERS), $(wildcard $(name)/*$(FAST
 	echo "------"  >> $@
 	#echo $(RUN_TASSEL) -version  >> $@
 	#$(RUN_TASSEL) -version  >> $@  2>&1
-	echo "env | grep LOADEDMODULES >> $@"
+	echo "env | grep LOADEDMODULES" >> $@
 	env | grep LOADEDMODULES  >> $@ 2>&1
 	echo "Java" >> $@
 	echo "----" >> $@
